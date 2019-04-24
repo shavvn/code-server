@@ -27,7 +27,8 @@ RUN apt-get update && apt-get install -y \
 	dumb-init \
 	vim \
 	curl \
-	wget
+	wget \
+	cmake g++ python3 python3-pip
 
 RUN locale-gen en_US.UTF-8
 # We unfortunately cannot use update-locale because docker will not use the env variables
